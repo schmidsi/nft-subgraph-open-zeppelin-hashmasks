@@ -1,0 +1,7 @@
+{
+    "output": "generated/Hashmasks.",
+    "chain": "mainnet",
+    "datasources": [
+      { "address": "0xc2c747e0f7004f9e8817db2ca4997657a7746928", "startBlock":  11743743, "module": "erc721" }
+    ]
+  }
