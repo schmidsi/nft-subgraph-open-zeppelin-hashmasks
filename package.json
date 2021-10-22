@@ -1,5 +1,12 @@
 {
+  "scripts": {
+    "build": "graph build",
+    "codegen": "graph codegen",
+    "deploy": "graph deploy --studio hm-test"
+  },
   "dependencies": {
+    "@graphprotocol/graph-cli": "^0.22.4",
+    "@graphprotocol/graph-ts": "^0.22.1",
     "@openzeppelin/subgraphs": "^0.1.4"
   }
 }
