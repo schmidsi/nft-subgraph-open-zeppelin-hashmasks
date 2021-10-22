@@ -1,4 +1,5 @@
 specVersion: 0.0.2
+description: "Standard ERC721"
 schema:
   file: schema.graphql
 dataSources:
