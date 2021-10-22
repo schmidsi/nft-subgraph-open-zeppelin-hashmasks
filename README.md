@@ -1,7 +1,7 @@
 ![Top Slide](./slide.jpg)
 
 - Contract to index: https://etherscan.io/address/0xc2c747e0f7004f9e8817db2ca4997657a7746928
-- [Google Slides](hhttps://docs.google.com/presentation/d/1braNq81WswM31CwMEyL4mKl-BqtnwzED5iFlDftShDA/edit?usp=sharing)
+- [Google Slides](https://docs.google.com/presentation/d/1braNq81WswM31CwMEyL4mKl-BqtnwzED5iFlDftShDA/edit?usp=sharing)
 
 # NFT Subgraph Example with Open Zeppelin
 
