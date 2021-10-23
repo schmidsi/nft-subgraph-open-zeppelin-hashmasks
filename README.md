@@ -11,6 +11,7 @@
 
 ## Steps
 
+- Create new folder & ape into it
 - `yarn add @openzeppelin/subgraphs @graphprotocol/graph-ts @graphprotocol/graph-cli`
 - [Find the contract on Etherscan](https://etherscan.io/address/0xc2c747e0f7004f9e8817db2ca4997657a7746928)
 - [Find the contract creation transaction for startBlock](https://etherscan.io/tx/0xe9e60dc12e1a7bc545aa497bc494f5f54ce81da06de4f6fef50459816218e66b)
@@ -40,6 +41,10 @@ npx graph-compiler \
   --export-subgraph
 ```
 
+- Inspect the source. Add a description to [subgraph.yaml](./subgraph.yaml): (Note: this is to make your subgraph hash unique. Tipp: You can just change it to force a resync if needed)
+```
+description: "My awesome subgraph"
+```yaml
 - Add scripts to `package.json`:
 
 ```json
@@ -47,7 +52,6 @@ npx graph-compiler \
   "scripts": {
     "build": "graph build",
     "codegen": "graph codegen",
-    "deploy": "graph deploy"
   }
 }
 ```
@@ -69,10 +73,11 @@ file: node_modules/@openzeppelin/contracts/build/contracts/IERC721Metadata.json
 - Update scripts:
 
 ```json
-"deploy": "graph deploy --studio hm-test"
+"deploy": "graph deploy --studio hashmasks"
 ```
 
-- Copy the Temporary Query URL
+- `yarn deploy`
+- Copy the "Temporary Query URL"
 - Go to https://graphiql-online.com/
 - Check the data:
 
