@@ -20,10 +20,6 @@ dataSources:
         - name: IERC721
           file: node_modules/@openzeppelin/contracts/build/contracts/IERC721Metadata.json
       eventHandlers:
-        - event: Approval(indexed address,indexed address,indexed uint256)
-          handler: handleApproval
-        - event: ApprovalForAll(indexed address,indexed address,bool)
-          handler: handleApprovalForAll
         - event: Transfer(indexed address,indexed address,indexed uint256)
           handler: handleTransfer
       file: node_modules/@openzeppelin/subgraphs/src/datasources/erc721.ts
