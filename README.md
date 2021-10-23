@@ -9,7 +9,7 @@
 
 - Install graph-cli
 
-## Steps
+## First Steps
 
 - Create new folder & ape into it
 - `yarn add @openzeppelin/subgraphs @graphprotocol/graph-ts @graphprotocol/graph-cli`
@@ -42,7 +42,8 @@ npx graph-compiler \
 ```
 
 - Inspect the source. Add a description to [subgraph.yaml](./subgraph.yaml): (Note: this is to make your subgraph hash unique. Tipp: You can just change it to force a resync if needed)
-```
+
+````
 description: "My awesome subgraph"
 ```yaml
 - Add scripts to `package.json`:
@@ -54,7 +55,7 @@ description: "My awesome subgraph"
     "codegen": "graph codegen",
   }
 }
-```
+````
 
 - Fix subgraph.yml 🤯:
 
@@ -101,6 +102,16 @@ query Test {
 
 - Publish & signal
 - View on Graph Explorer
+
+## Extend the Subgraph
+
+- Create [mapping.ts](./mapping.ts)
+- Copy/paste from [@openzeppelin/subgraphs/src/datasources/erc721](./node_modules/@openzeppelin/subgraphs/src/datasources/erc721.ts)
+- Fix imports:
+  - `../../generated` -> `./generated`
+  - `../fetch/` -> `@openzeppelin/subgraphs/src/fetch`
+- Check if it still works: `yarn codegen && yarn build`
+- Remove unused handlers
 
 ## Other resources
 
