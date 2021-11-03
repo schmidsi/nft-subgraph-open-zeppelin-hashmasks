@@ -117,6 +117,7 @@ query Test {
 
 ## Other resources
 
+- https://github.com/Developer-DAO/resources
 - https://dev.to/dabit3/the-complete-guide-to-full-stack-ethereum-development-3j13
 - https://github.com/itsjerryokolo/CryptoPunks
 - https://graphiql-online.com/graphiql
