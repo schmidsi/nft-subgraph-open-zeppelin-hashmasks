@@ -115,6 +115,7 @@ query Test {
 
 ## Other resources
 
+- https://dev.to/dabit3/the-complete-guide-to-full-stack-ethereum-development-3j13
 - https://github.com/itsjerryokolo/CryptoPunks
 - https://graphiql-online.com/graphiql
 - https://github.com/dabit3/building-a-subgraph-workshop
